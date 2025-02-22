@@ -4,30 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OLESPizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <img class="background-img" src="./icons/background.png" alt="Background" />
-    <header class="header">
-      <nav class="header-nav">
-        <a class="header-name" href="#">OlesPizza</a>
-        <a class="header-link" href="#">Home</a>
-        <a class="header-link" href="#">Menu</a>
-        <a class="header-link" href="#">Contact</a>
-        <a class="header-link" href="#">About Us</a>
-        <button class="buttons">Sign up</button>
-      </nav>
-    </header>
     <main class="main">
+      <div class="first-page">
+         <img class="background-img" src="./icons/background.png" alt="Background" />
+      <header class="header">
+        <nav class="header-nav">
+          <a class="header-name" href="#"><span class="oles">Oles</span> Pizza</a>
+          <a class="header-link home" href="#">Home</a>
+          <a class="header-link" href="#">Menu</a>
+          <a class="header-link" href="#">Contact</a>
+          <a class="header-link" href="#">About Us</a>
+          <button class="buttons">Sign up</button>
+        </nav>
+      </header>
       <section class="banner">
         <div class="main-left">
-            <span class="banner-subheader">#1  Best Healthy Pizza</span>
+            <div class="best-healthy-salad">
+              <span class="banner-subheader">#1  Best Healthy Pizza</span>
+            </div>
             <h1 class="banner-header">
-            <span>Skip</span> The Diet, Just Eat Healthy With Veterano Pizza
+            <span class="orange-header-word">Skip</span> The Diet, Just Eat Healthy With Veterano Pizza
             </h1>
             <p>
             Imagine you don't need a diet because we provide healthy and delicious food for you!
             </p>
-            <button class="buttons">Order Pizza</button>
+            <button class="buttons order">Order Pizza</button>
             <div class="banner-container">
                 <div class="banner-summary">
                     <span>5.000+</span>
@@ -44,45 +49,52 @@
             </div>
         </div>
         <div class="main-right">
-            <section class = "review-summary">
-                <img class="happy-icon" src="./icons/ya.png" alt="Happy icon"/>
-                <p>Our Happy Customer</p>
-                <img class="star" src="./icons/Star.svg" alt = "Star" />
-                <span>4.9</span>
-                <span>(1.989 Reviews)</span>
-            </section>
-            <section class = "calories-bar">
-                <span>Daily Calories</span>
-                <p>123 Cal</p>
-                <div class="progress-container">
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
-                    <progress class="progress-calories" value="32" max="100">
-                        32% 
-                    </progress>
+          <section class="review-summary">
+            <img class="happy-icon" src="./icons/ya.png" alt="Happy icon"/>
+            <div class="review-text">
+                <span class="review-title">Our Happy Customer</span>
+                <div class="review-bottom">
+                    <img class="star" src="./icons/Star.svg" alt="Star"/>
+                    <span class="reviews">4.9</span>
+                    <span class="reviews number">(1.989 Reviews)</span>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        
+          <section class = "calories-bar">
+              <span class="daily-calories">Daily Calories</span>
+              <p class="calories-number">123 Cal</p>
+              <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 20%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 40%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 30%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 60%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 50%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 80%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 90%;"></div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="height: 100%;"></div>
+                </div>
+            </div>            
+          </section>
+      </div>
       </section>
+      </div>
+      
       <section class="description">
         <h2 class="section-header">Why choose us for your healthy pizza</h2>
         <p class="section-subheader">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>

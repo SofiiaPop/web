@@ -1,0 +1,263 @@
+.first-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(circle farthest-corner at top right, #ffe8c8, #fff);
+    z-index: -2;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.best-healthy-salad {
+    width: 40%;
+    padding: 1% 3%;
+    border-radius: 30%;
+    background-color: #fff0dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-subheader {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 3vh;
+    color: #FB9333;
+}
+
+.banner-header {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 7vh;
+    color: #575757;
+    margin: 1vh 0;
+}
+
+.orange-header-word {
+    color: #FB9333;
+}
+
+.banner-description {
+    font-family: 'Poppins';
+    font-size: 2.5vh;
+    color: #777;
+    margin-bottom: 3vh;
+}
+
+.banner-container {
+    display: flex;
+    gap: 5%;
+}
+
+.banner-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: #575757;
+}
+
+.header {
+    width: 90%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.header-name {
+    font-weight: 900;
+    font-size: 3vh;
+    font-family: "Roboto";
+    color: #585858;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-link {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 2vh;
+    color: #575757;
+    text-decoration: none;
+}
+
+.home {
+    color: #FB9300;
+    font-weight: bold;
+}
+
+.oles {
+    color: #FB9300;
+}
+
+.buttons {
+    border-radius: 15vh;
+    padding: 0.4vh 1.5vw;
+    background-color: #FB9333;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2vh;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.5vh;
+    width: 10vw;
+}
+
+.main-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-summary {
+    position: absolute;
+    top: 80%;
+    right: 20%;
+    background: #fff;
+    padding: 1% 2%;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.happy-icon {
+    width: 25%;
+    height: 25%;
+}
+
+.review-title {
+    font-family: 'Poppins';
+    font-size: 3%;
+    font-weight: 600;
+    color: #333;
+}
+
+.review-bottom {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.star {
+    width: 10%;
+    height: 10%;
+}
+
+.reviews {
+    font-family: 'Poppins';
+    font-size: 65%;
+    font-weight: 400;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 55%;
+}
+
+.calories-bar {
+    width: 9%;
+    height: 15%;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    text-align: center;
+    background: #fff;
+    padding: 1%;
+    border-radius: 15%;
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
+
+.progress-container {
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5% 0;
+}
+
+.progress-bar {
+    width: 7%;
+    height: 8vh;
+    background-color: #eee;
+    border-radius: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    width: 100%;
+    background: linear-gradient(to top, #FB9333, #FFD699);
+    border-radius: 10%;
+    position: absolute;
+    bottom: 0;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top right;
+    z-index: -1;
+}
+
+.calories-number{
+    font-family: 'Poppins';
+    font-weight: 600;
+    size: 2%;
+}
+
+.calories-bar {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    text-align: center;
+    background: #fff;
+    padding: 1%;
+    border-radius: 15%;
+    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+}
