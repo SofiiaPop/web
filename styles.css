@@ -1,28 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.main {
+    width: 100%;
+}
+
 .first-page {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: radial-gradient(circle farthest-corner at top right, #ffe8c8, #fff);
+    background: radial-gradient(circle at 80% 20%, #ffe8c8, #fff 80%);
     z-index: -2;
 }
 
 .banner {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 3%;
+    align-items: center;
+    padding: 5% 9%;
+    gap: 5%;
 }
 
+
 .main-left {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .best-healthy-salad {
-    width: 40%;
+    width: 45%;
     padding: 1% 3%;
     border-radius: 30%;
     background-color: #fff0dc;
@@ -31,30 +45,26 @@
     align-items: center;
 }
 
+.imagine-description{
+    font-size: 160%;
+}
+
 .banner-subheader {
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 3vh;
+    font-size: 2vh;
     color: #FB9333;
 }
 
 .banner-header {
-    font-family: 'Poppins';
+    font-size: 6vh;
     font-weight: 700;
-    font-size: 7vh;
     color: #575757;
-    margin: 1vh 0;
+    line-height: 1.2;
 }
 
 .orange-header-word {
     color: #FB9333;
-}
-
-.banner-description {
-    font-family: 'Poppins';
-    font-size: 2.5vh;
-    color: #777;
-    margin-bottom: 3vh;
 }
 
 .banner-container {
@@ -94,41 +104,25 @@
 
 nav {
     display: flex;
-    gap: 5%;
     align-items: center;
-    flex-grow: 1;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 3vw;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .header-link {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 2vh;
+    font-size: 1.8vh;
     color: #575757;
     text-decoration: none;
-}
-
-.home {
-    color: #FB9300;
-    font-weight: bold;
+    margin: 0 2%;
 }
 
 .oles {
     color: #FB9300;
-}
-
-.buttons {
-    border-radius: 15vh;
-    padding: 0.4vh 1.5vw;
-    background-color: #FB9333;
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 2vh;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-left: 0.5vh;
-    width: 10vw;
 }
 
 .main-right {
@@ -141,15 +135,15 @@ nav {
 
 .review-summary {
     position: absolute;
-    top: 80%;
+    bottom: 15%;
     right: 20%;
     background: #fff;
     padding: 1% 2%;
-    border-radius: 15%;
+    border-radius: 5vh;
     display: flex;
     align-items: center;
-    gap: 5%;
-    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+    gap: 3%;
+    box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
 }
 
 .review-text {
@@ -165,8 +159,7 @@ nav {
 }
 
 .review-title {
-    font-family: 'Poppins';
-    font-size: 3%;
+    font-size: 1.5vh;
     font-weight: 600;
     color: #333;
 }
@@ -174,51 +167,62 @@ nav {
 .review-bottom {
     display: flex;
     align-items: center;
-    gap: 2%;
+    gap: 1vh;
 }
 
 .star {
-    width: 10%;
-    height: 10%;
+    width: 2vh;
 }
 
 .reviews {
-    font-family: 'Poppins';
-    font-size: 65%;
+    font-size: 1.5vh;
     font-weight: 400;
 }
 
 .number {
     font-weight: 600;
-    font-size: 55%;
+}
+
+.order{
+    width: 35%;
 }
 
 .calories-bar {
-    width: 9%;
-    height: 15%;
+    width: 10%;
+    height: 20%;
     position: absolute;
     bottom: 10%;
     right: 5%;
-    text-align: center;
+    text-align: left;
     background: #fff;
     padding: 1%;
     border-radius: 15%;
     box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
 }
 
+.daily-calories {
+    font-size: 2vh;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    margin: 5%;
+}
+
 .progress-container {
     display: flex;
-    gap: 2%;
+    gap: 1vh;
     justify-content: center;
     align-items: flex-end;
+    width: 100%;
+    height: 40%;
     padding: 5% 0;
 }
 
 .progress-bar {
-    width: 7%;
+    width: 1.5vh;
     height: 8vh;
     background-color: #eee;
-    border-radius: 10%;
+    border-radius: 2vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -229,7 +233,7 @@ nav {
 .progress-fill {
     width: 100%;
     background: linear-gradient(to top, #FB9333, #FFD699);
-    border-radius: 10%;
+    border-radius: 2vh;
     position: absolute;
     bottom: 0;
 }
@@ -238,7 +242,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     object-position: top right;
@@ -248,16 +252,460 @@ nav {
 .calories-number{
     font-family: 'Poppins';
     font-weight: 600;
-    size: 2%;
+    font-size: 2vh;
+    margin: 5%;
 }
 
-.calories-bar {
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
+.section-header {
+    font-family: 'Poppins';
+    font-weight: 610;
+    font-size: 5vh;
+    color: #333;
+}
+
+.section-subheader {
+    font-family: 'Poppins';
+    font-weight: 475;
+    font-size: 2vh;
+    color: #777;
+    max-width: 60%;
+    margin: auto;
+}
+
+.description {
     text-align: center;
+    padding: 5%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.achievements-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.achievement {
+    width: 30%;
     background: #fff;
-    padding: 1%;
+    padding: 4%;
+    border-radius: 2vh;
+    box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 20%;
+    max-width: 25%;
+}
+
+.achievement-img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 4%;
+}
+
+.achievement-name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 2.5vh;
+    color: #333;
+    margin-bottom: 2%;
+}
+
+.achievement-description {
+    font-family: 'Poppins';
+    font-size: 2vh;
+    color: #777;
+    margin-bottom: 4%;
+    width: 85%;
+}
+
+.achievement-link {
+    font-family: 'Poppins';
+    font-size: 2vh;
+    font-weight: 600;
+    color: #FB9333;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.achievment-link img {
+    width: 5%;
+}
+
+.why-choose-us{
+    color: #FB9333;
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff8ec;
+    padding: 5%;
+    border-radius: 2%;
+    max-width: 100%;
+    height: 35%;
+    gap: 3%;
+    overflow: hidden;
+}
+
+.comments:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.section-subheader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: #777;
+    max-width: 50%;
+}
+
+.scrolledNumber {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vh;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    color: #333;
+}
+
+.totalNumber {
+    color: #ccc;
+    font-size: 2vh;
+}
+
+.commentsButtons {
+    background-color: #FB9333;
+    border: none;
+    width: 10%;
+    height: 10%;
+    padding: 2%;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commentsButtons:hover {
+    background-color: #ffab54;
+}
+
+.button-strilochka {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.comments-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    width: 60%;
+    flex-wrap: nowrap;
+    position: relative;
+    max-width: 85%;
+}
+
+.comments article {
+    width: 30%;
+    background: #fff;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.comments-img {
+    width: 20%;
+    height: auto;
     border-radius: 15%;
-    box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+.comments-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5vh;
+    color: #333;
+    margin-bottom: 3%;
+}
+
+.comments-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    color: #777;
+    width: 90%;
+}
+
+.comment-header {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.strilochky {
+    display: flex;
+    gap: 2%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.comments-subheader{
+    margin: 0;
+    max-width: 100%;
+}
+
+.comments-container-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: nowrap;
+    padding: 3% 5%;
+    margin: 0 auto;
+}
+
+.menu {
+    background: #fff;
+    border-radius: 10%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0.3% 0.8% rgba(0, 0, 0, 0.1);
+}
+
+.menu-img {
+    border-radius: 1%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.menu-name {
+    font-weight: 600;
+    font-size: 2vh;
+}
+
+.menu h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #FB9333;
+    margin-top: 1%;
+}
+
+.menu .section-header {
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2%;
+}
+
+.section-subheader {
+    font-size: 2vh;
+    text-align: center;
+    color: #FB9333;
+    font-weight: 550;
+    display: block;
+}
+
+.oles-menu{
+    font-size: 1.5vh;
+}
+
+.footer {
+    padding: 5% 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+
+.footer-left {
+    flex: 1;
+    width: 15%;
+    height: 15%;
+    gap: 5%;
+}
+
+.footer-brand {
+    font: "Roboto";
+    font-size: 2vh;
+    font-weight: 900;
+    color: #333;
+}
+
+.footer-orange {
+    color: #FB9333;
+}
+
+.footer-description {
+    font: "Poppins";
+    font-weight: 400;
+    font-size: 1vh;
+    color: #575757;
+    max-width: 80%;
+    margin-top: 1vh;
+}
+
+.footer-middle {
+    width: 15%;
+    height: 15%;
+    gap: 1%;
+    flex: 1;
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 1vh;
+    font-weight: 400;
+    color: #575757;
+    margin-bottom: 2vh;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 5%;
+    height: 15%;
+    gap: 2%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #777;
+    font-size: 2vh;
+    transition: color 0.3s ease-in-out;
+    width: 1%;
+    height: 2%;
+    top: 3%;
+}
+
+.footer-link:hover {
+    color: #FB9333;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.get-in-touch-item {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    font-size: 2vh;
+    color: #777;
+}
+
+.footer-icon {
+    width: 2vh;
+    height: 2vh;
+    top: 3%;
+}
+
+.footer-right {
+    width: 15%;
+    height: 5%;
+    flex: 1;
+    text-align: right;
+}
+
+.footer-social {
+    width: 10%;
+    height: 2%;
+    gap: 2%;
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    margin-top: 2vh;
+    margin-left: 40%;
+}
+
+.footer-social-icon {
+    width: 2.5vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social-icon:hover {
+    transform: scale(1.1);
+}
+
+.services {
+    background-image: url("./icons/subscribe.png");
+    background-size: cover;
+    width: 95%;
+    height: 70%;
+    margin: 0 auto;
+    border-radius: 1%;
+    top: 4%;
+    gap: 5%;
+}
+
+.subscribe {
+    color: #FB9333;
+}
+
+.recommendation{
+    color: #575757;
+    font-size: 1.3vh;
+}
+
+.icon-description{
+    font-weight: 400;
+    size: 1%;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.buttons {
+    background-color: #FB9333;
+    padding: 1.5vh 3vh;
+    border-radius: 5vh;
+    font-weight: 600;
+    font-size: 2vh;
+    color: #fff;
+    border: none;
+}
+
+.subscribe-btn {
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #ffab54;
 }

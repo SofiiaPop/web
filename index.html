@@ -14,7 +14,7 @@
       <header class="header">
         <nav class="header-nav">
           <a class="header-name" href="#"><span class="oles">Oles</span> Pizza</a>
-          <a class="header-link home" href="#">Home</a>
+          <a class="header-link" href="#">Home</a>
           <a class="header-link" href="#">Menu</a>
           <a class="header-link" href="#">Contact</a>
           <a class="header-link" href="#">About Us</a>
@@ -29,7 +29,7 @@
             <h1 class="banner-header">
             <span class="orange-header-word">Skip</span> The Diet, Just Eat Healthy With Veterano Pizza
             </h1>
-            <p>
+            <p class="imagine-description">
             Imagine you don't need a diet because we provide healthy and delicious food for you!
             </p>
             <button class="buttons order">Order Pizza</button>
@@ -96,55 +96,61 @@
       </div>
       
       <section class="description">
-        <h2 class="section-header">Why choose us for your healthy pizza</h2>
-        <p class="section-subheader">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>
-        <div class="achievments-container">
-          <article class="achievment">
-            <img class="achievment-img" src="./icons/achievment1.png" alt="achievment" />
-            <h4 class="achievment-name">Own ingredients orchard</h4>
-            <p class="achievment-description">
-                Langsung dari Kebun Sendiri yang tersebar di setiap provinsi yang memiliki cabang toko Jez Salad.
-            </p>
-            <a class="achievment-link" href="#">
-              Learn more
-              <span class="commentsButtons">
-                  <img class="description-strilochka" src="./icons/arrow.png" alt="next button icon">
-              </span>
-          </a>
-          </article>
-          <article class="achievment">
-            <img class="achievment-img" src="./icons/achievment2.png" alt="achievment" />
-            <h4 class="achievment-name">#1 Healthy Pizza</h4>
-            <p class="achievment-description">
-                The pioneer of healthy Pizza that are delicious & suitable for all people with the best quality assurance.
-            </p>
-            <a class="achievment-link" href="#">
-              Learn more
-              <img class="description-strilochka" src="./icons/arrow.png" alt="next button icon">
-            </a>
-          </article>
-          <article class="achievment">
-            <img class="achievment-img" src="./icons/achievment3.png" alt="achievment" />
-            <h4 class="achievment-name">100 Top Brand</h4>
-            <p class="achievment-description">
-                We are one of the best brands in the Food and Beverage sector in Indonesia.
-            </p>
-            <a class="achievment-link" href="#">
-              Learn more
-              <img class="description-strilochka" src="./icons/arrow.png" alt="next button icon">
-            </a>
-          </article>
+        <div class="why-header">
+          <h2 class="section-header">Why choose us for <span class="why-choose-us">your healthy pizza</span></h2>
+          <p class="section-subheader why">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>
         </div>
-      </section>
+        <div class="achievements-container">
+          <article class="achievement">
+            <img class="achievement-img" src="./icons/achievment1.png" alt="achievement" />
+            <h4 class="achievement-name">Own ingredients orchard</h4>
+            <p class="achievment-description">
+              Langsung dari Kebun Sendiri yang tersebar di setiap provinsi yang memiliki cabang toko Jez Salad.
+            </p>
+            <!-- <a class="achievement-link" href="#">
+                Learn more
+                <img class="NextButton" src="./icons/arrow.png" alt="next button icon">
+            </a> -->
+        </article>
+        <div class="comments-container-wrapper">
+            <article class="achievement">
+                <img class="achievement-img" src="./icons/achievment2.png" alt="achievement" />
+                <h4 class="achievement-name">#1 Healthy Pizza</h4>
+                <p class="achievment-description">
+                    The pioneer of healthy Pizza that are delicious & suitable for all people with the best quality assurance.
+                </p>
+                <!-- <a class="achievement-link" href="#">
+                    Learn more
+                    <img class="NextButton" src="./icons/arrow.png" alt="next button icon">
+                </a> -->
+            </article>
+            <article class="achievement">
+                <img class="achievement-img" src="./icons/achievment3.png" alt="achievement" />
+                <h4 class="achievement-name">100 Top Brand</h4>
+                <p class="achievment-description">
+                    We are one of the best brands in the Food and Beverage sector in Indonesia.
+                </p>
+                <!-- <a class="achievement-link" href="#">
+                    Learn more
+                    <img class="NextButton" src="./icons/arrow.png" alt="next button icon">
+                </a> -->
+            </article>
+          </div>
+        </section>
       <section class="comments">
-        <h2 class="section-header">What Are People Saying About Us</h2>
-        <p class="section-subheader">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>
+        <div class="comment-header">
+          <h2 class="section-header">What Are People Saying <span class="orange-header-word">About Us</span></h2>
+          <p class="section-subheader comments-subheader">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>
+        
         <div class="scrolledNumber">
             <span>02</span>
-            <span>/05</span>
+            <span class="totalNumber">/05</span>
         </div>
-        <button class="commentsButtons"><img class="button-strilochka" src="./icons/PreviousButton.png" alt="previous button icon"></button>
-        <button class="commentsButtons"><img class="button-strilochka" src="./icons/NextButton.png" alt="next button icon"></button>
+        <div class="strilochky">
+          <button class="commentsButtons"><img class="button-strilochka" src="./icons/PreviousButton.png" alt="previous button icon"></button>
+          <button class="commentsButtons"><img class="button-strilochka" src="./icons/NextButton.png" alt="next button icon"></button>
+        </div>
+      </div>
         <div class="comments-container">
           <article class="comments">
             <img class="comments-img" src="./icons/commenter1.png" alt="commenter" />
@@ -152,8 +158,6 @@
             <span>60 Years</span>
             <p class="comments-description">
                 This pizza is like hypothesis testing! You can immerse yourself into it! Love this pizza even more than Normal distribution :)
-
-                Oles thanks for the job as a dekan!
             </p>
           </article>
           <article class="comments">
@@ -161,7 +165,7 @@
             <h2 class="comments-name">Tetiana Zakharchenko</h2>
             <span>35 Years</span>
             <p class="comments-description">
-                The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal, it sounds so brilliant and tastes in the same way. Only recommendation!!!!!
+                The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal, it sounds so brilliant.
             </p>
           </article>
           <article class="comments">
@@ -169,13 +173,13 @@
             <h2 class="comments-name">Nadia Liaskovska</h2>
             <span>45 Years</span>
             <p class="comments-description">
-                This pizza sounds as a reduced row echelon form, sounds strange, but when you try it, it is like as Natalia said PUT YOURSELF ON MYSELF AND FEEL THAT taste!!!
+                This pizza sounds as a reduced row echelon form, sounds strange, but when you try it, it is like as Natalia said FEEL THAT taste!!!
             </p>
           </article>
         </div>
       </section>
       <section class="menu">
-        <span class="section-subheader">MENU by OLES</span>
+        <span class="section-subheader oles-menu">MENU by OLES</span>
         <h2 class="section-header">ENJOY THE BEST MENU AND GET DISCOUNTS AVAILABLE</h2>
         
         <section class="menu-container">
@@ -195,56 +199,64 @@
               <h5>$ 3.99</h5>
             </article>
         </section>
-      </section>
+    </section>    
       <section class="services">
-        <span>Our Subscribe</span>
-        <h2 class="section-header">Subscribe To Get The Latest Promo from Oles Pizza</h2>
-        <p>We recommended you to subscribe to our promo program, drop your email below to get daily update about us</p>
-        <form>
-            <input type="text" id="name" name="name" placeholder="Enter your email address">
-            <button type="submit">Subscribe</button>
-        </form>
+        <div class="section-subheader subscribe">
+          <span>Our Subscribe</span>
+          <h2 class="section-header">Subscribe To Get The Latest Promo from Oles Pizza</h2>
+          <p class="section-subheader recommendation">We recommended you to subscribe to our promo program, drop your email below to get daily update about us</p>
+          <form class="subscribe-form">
+              <input type="text" id="name" name="name" placeholder="Enter your email address">
+              <button type="submit" class="section-subheader recommendation buttons subscribe-btn">Subscribe</button>
+          </form>
+        </div>
       </section>
       <footer class="footer">
-        <div>
-            <h6>OLES PIZZA</h6>
-            <p>Oles Pizze is the pioneer of healthy tasty pizza with high nutrition.</p>
-            <span>©Copyright Oles UCU Pizza</span>
-        </div>
-        <div>
-            <nav class="footer-nav">
-                <a class="footer-name" href="#">Feature</a>
-                <a class="footer-link" href="#">Menu</a>
-                <a class="footer-link" href="#">Promo</a>
-                <a class="footer-link" href="#">Contact</a>
-                <a class="footer-link" href="#">About Us</a>
-            </nav>
-        </div>
-        <div>
-            <div class="footer-nav">
-                <span>Get in Touch</span>
-              <div class="get-in-touch-specification">
-                <img class="footer-img" src="./icons/location_on.png" alt="location icon" />
-                <span>Kozelnytska 2a</span>
-              </div>
-              <div class="get-in-touch-specification">
-                <img class="footer-img" src="./icons/email.png" alt="email icon" />
-                <span>dobosevych@ucu.edu.ua</span>
-              </div>
-              <div class="get-in-touch-specification">
-                <img class="footer-img" src="./icons/call.png" alt="call icon" />
-                <span>+380 (50) 819 78 55</span>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h6 class="footer-brand"><span class="footer-orange">OLES</span> PIZZA</h6>
+                <p class="footer-description">Oles Pizza is the pioneer of healthy tasty pizza with high nutrition.</p>
+                <span class="footer-description">©Copyright Oles UCU Pizza</span>
+            </div>
+            
+            <div class="footer-middle">
+                <h6 class="footer-title">Feature</h6>
+                <nav class="footer-nav">
+                    <a class="footer-link" href="#">Menu</a>
+                    <a class="footer-link" href="#">Promo</a>
+                    <a class="footer-link" href="#">Contact</a>
+                    <a class="footer-link" href="#">About Us</a>
+                </nav>
+            </div>
+    
+            <div class="footer-middle">
+                <h6 class="footer-title">Get in Touch</h6>
+                <div class="get-in-touch">
+                    <div class="get-in-touch-item">
+                        <img class="footer-icon" src="./icons/location_on.png" alt="Location">
+                        <span class="icon-description">Kozelnytska 2a</span>
+                    </div>
+                    <div class="get-in-touch-item">
+                        <img class="footer-icon" src="./icons/email.png" alt="Email">
+                        <span class="icon-description">dobosevych@ucu.edu.ua</span>
+                    </div>
+                    <div class="get-in-touch-item">
+                        <img class="footer-icon" src="./icons/call.png" alt="Phone">
+                        <span class="icon-description">+380 (50) 819 78 55</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-right">
+                <div class="footer-social">
+                    <img class="footer-social-icon" src="./icons/email.png" alt="Email">
+                    <img class="footer-social-icon" src="./icons/linkedin.png" alt="LinkedIn">
+                    <img class="footer-social-icon" src="./icons/instagram.png" alt="Instagram">
+                </div>
+                <h6 class="footer-title">Follow our social media</h6>
             </div>
         </div>
-        <div>
-            <div class="footer-nav">
-                <img class="footer-img" src="./icons/Vector.png" alt="twitter icon" />
-                <img class="footer-img" src="./icons/linkedin.png" alt="linkedin icon" />
-                <img class="footer-img" src="./icons/instagram.png" alt="instagram icon" />
-            </div>
-            <p>Follow our social media.</p>
-        </div>
-      </footer>
+    </footer>    
     </main>
   </body>
 </html>
