@@ -101,7 +101,6 @@
           <p class="section-subheader why">We continue to consistently choose and maintain the quality of the ingredients served, so that it remains fresh and nutritious when you eat it.</p>
         </div>
         <div class="achievements-container">
-          <div class="comments-container-wrapper"></div>
           <article class="achievement">
             <img class="achievement-img" src="./icons/achievment1.png" alt="achievement" />
             <h4 class="achievement-name">Own ingredients orchard</h4>
@@ -154,7 +153,9 @@
       </div>
         <div class="comments-container">
           <article class="comments">
-            <img class="comments-img" src="./icons/commenter1.png" alt="commenter" />
+            <div class="comments-img-wrapper">
+              <img class="comments-img" src="./icons/commenter1.png" alt="commenter" />
+            </div>
             <h2 class="comments-name">Hryniv Rostyslav</h2>
             <span>60 Years</span>
             <p class="comments-description">
@@ -162,15 +163,19 @@
             </p>
           </article>
           <article class="comments">
-            <img class="comments-img" src="./icons/commenter3.png" alt="commenter" />
+            <div class="comments-img-wrapper">
+              <img class="comments-img" src="./icons/commenter3.png" alt="commenter" />
+            </div>
             <h2 class="comments-name">Tetiana Zakharchenko</h2>
             <span>35 Years</span>
             <p class="comments-description">
-                The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal, it sounds so brilliant.
+                The pizza is tasty!!! Even OP doesn’t look like this pizza in Oles factory pizza, it’s unreal.
             </p>
           </article>
           <article class="comments">
-            <img class="comments-img" src="./icons/commenter2.png" alt="commenter" />
+            <div class="comments-img-wrapper">
+              <img class="comments-img" src="./icons/commenter2.png" alt="commenter" />
+            </div>
             <h2 class="comments-name">Nadia Liaskovska</h2>
             <span>45 Years</span>
             <p class="comments-description">
@@ -206,10 +211,10 @@
           <span>Our Subscribe</span>
           <h2 class="section-header">Subscribe To Get The Latest Promo from Oles Pizza</h2>
           <p class="section-subheader recommendation">We recommended you to subscribe to our promo program, drop your email below to get daily update about us</p>
-          <form class="subscribe-form">
-              <input type="text" id="name" name="name" placeholder="Enter your email address">
-              <button type="submit" class="section-subheader recommendation buttons subscribe-btn">Subscribe</button>
-          </form>
+            <form class="subscribe-form">
+              <input type="text" id="name" name="name" class="email-input" placeholder="Enter your email address">
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>        
         </div>
       </section>
       <footer class="footer">

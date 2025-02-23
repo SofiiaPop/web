@@ -363,6 +363,7 @@ nav {
 }
 
 .comments {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -373,7 +374,6 @@ nav {
     max-width: 100%;
     height: 35%;
     gap: 3%;
-    overflow: hidden;
 }
 
 .comments article:hover {
@@ -429,31 +429,45 @@ nav {
 .comments-container {
     display: flex;
     justify-content: space-between;
-    gap: 3%;
-    width: 60%;
+    gap: 2%;
+    width: 100%;
+    max-width: 90vw;
     flex-wrap: nowrap;
     position: relative;
-    max-width: 85%;
 }
 
 .comments article {
-    width: 30%;
+    flex: 1 1 30%;
     background: #fff;
-    padding: 5%;
+    padding: 4%;
     border-radius: 5%;
     box-shadow: 0 2% 5% rgba(0, 0, 0, 0.1);
     display: flex;
-    flex: 0 0 30%;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 20%;
 }
 
 .comments-img {
-    width: 20%;
+    width: 100%;
     height: auto;
     border-radius: 15%;
     margin-bottom: 5%;
+}
+
+.comments-img-wrapper {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 1vw;
+    background-color: black;
+    position: absolute;
+    top: -2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .comments-name {
@@ -500,38 +514,58 @@ nav {
     justify-content: center;
     gap: 5%;
     flex-wrap: nowrap;
-    padding: 3% 5%;
-    margin: 0 auto;
+    padding: auto;
+    margin: 5% auto;
 }
 
 .menu {
     background: #fff;
     border-radius: 10%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-shadow: 0 0.3% 0.8% rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 .menu-img {
+    display: block;
+    width: 90%;
     border-radius: 1%;
     object-fit: cover;
-    width: 100%;
 }
 
 .menu-name {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-weight: 600;
     font-size: 2vh;
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+    width: 80%;
+    z-index: 2;
 }
 
 .menu h5 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Poppins', sans-serif;
     font-size: 2vh;
     font-weight: bold;
     color: #FB9333;
-    margin-top: 1%;
+    padding: 3% 8%;
+    border-radius: 5%;
+    text-align: center;
+    width: 60%;
+    z-index: 2;
 }
 
 .menu .section-header {
@@ -680,17 +714,6 @@ nav {
     transform: scale(1.1);
 }
 
-.services {
-    background-image: url("./icons/subscribe.png");
-    background-size: cover;
-    width: 95%;
-    height: 70%;
-    margin: 0 auto;
-    border-radius: 1%;
-    top: 4%;
-    gap: 5%;
-}
-
 .subscribe {
     color: #FB9333;
 }
@@ -705,12 +728,6 @@ nav {
     size: 1%;
 }
 
-.subscribe-form {
-    display: flex;
-    justify-content: center;
-    gap: 1vw;
-}
-
 .buttons {
     background-color: #FB9333;
     padding: 1.5vh 3vh;
@@ -719,14 +736,6 @@ nav {
     font-size: 2vh;
     color: #fff;
     border: none;
-}
-
-.subscribe-btn {
-    transition: 0.3s;
-}
-
-.subscribe-btn:hover {
-    background-color: #ffab54;
 }
 
 .achievement-btn{
@@ -748,4 +757,58 @@ nav {
     text-align: left;
     color: #828282;
     font-size: 2.3vh;
+}
+
+.services {
+    background-image: url("./icons/subscribe.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75vw;
+    height: 60vh;
+    margin: 0 auto;
+    border-radius: 5%;
+    padding: 3%;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10vw;
+    padding: 2% 3%;
+    width: auto;
+    box-shadow: 0 0.5vh 2vh rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+}
+
+.email-input {
+    border: none;
+    padding: 3%;
+    font-size: 2vh;
+    flex-grow: 1;
+    border-radius: 10vw;
+    outline: none;
+    color: #333;
+}
+
+.subscribe-btn {
+    background-color: #FB9333;
+    color: white;
+    border: none;
+    padding: 3% 5%;
+    border-radius: 10vw;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #ffab54;
 }
